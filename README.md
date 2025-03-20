@@ -46,6 +46,37 @@ poetry self add poetry-plugin-shell # installs poetry shell plugin
 poetry shell
 ```
 
+<h2>Rootly Verified Setup</h2>
+
+### Using kind and Google Cloud Platform
+
+Create a Google Compute Engine virtual machine on an E2-medium. 
+
+Update apt:
+
+```bash
+sudo apt update
+```
+
+Install `kind` using the [Linux quickstart](https://kind.sigs.k8s.io/docs/user/quick-start/) for the x86 configuration
+
+Install docker
+
+Start docker daemon in the background.
+
+```bash
+sudo systemctl start docker
+```
+
+Git clone this repository, go to the project's root directory, and run:
+
+```
+kind create cluster --config kind/kind-config-x86.yaml
+```
+
+
+
+
 <h2 id="🚀quickstart">🚀 Quick Start </h2>
 
 <!-- TODO: Add instructions for both local cluster and remote cluster -->
