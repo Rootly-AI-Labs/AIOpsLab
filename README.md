@@ -76,6 +76,7 @@ sudo systemctl start docker
 Git clone this repository, go to the project's root directory, and run:
 
 ```bash
+pip install -e . --break-system-packages
 sudo kind create cluster --config kind/kind-config-x86.yaml
 ```
 
