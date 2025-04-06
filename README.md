@@ -60,7 +60,12 @@ sudo apt update
 
 Install `kind` using the [Linux quickstart](https://kind.sigs.k8s.io/docs/user/quick-start/) for the x86 configuration
 
-Install docker
+Install docker based on instructions ([pre-release instructions below](https://docs.docker.com/engine/install/ubuntu/#install-pre-releases))
+
+```bash
+curl -fsSL https://test.docker.com -o test-docker.sh
+sudo sh test-docker.sh
+```
 
 Start docker daemon in the background.
 
